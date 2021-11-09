@@ -56,7 +56,10 @@ func main() {
 			}
 			charMap[start] = append(charMap[start], lines[i])
 		}
+
+		// create empty string slice to append map to
 		var eSlice []string
+
 		/*The j below refers to the index of each slice within a
 		created by splitlines, represented by val. The k represents
 		the length of each individual slice. The i iterates up to 9
@@ -72,6 +75,8 @@ func main() {
 
 			}
 		}
+
+		// create final string to add to new file
 
 		fString := strings.Join(eSlice, "")
 
